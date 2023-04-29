@@ -19,7 +19,7 @@ const app = express();
 // * middlewares before the routes
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin: "https://monitime.onrender.com",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     headers: ["X-Requested-With", "Content-Type", "Authorization"],
   })
