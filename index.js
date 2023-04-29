@@ -19,7 +19,7 @@ const app = express();
 // * middlewares before the routes
 app.use(
   cors({
-    origin: "https://monitime.onrender.com",
+    origin: ["https://monitime.netlify.app", "https://monitime.onrender.com, "],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     headers: ["X-Requested-With", "Content-Type", "Authorization"],
   })
